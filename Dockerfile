@@ -6,7 +6,7 @@ COPY . .
 
 # Installing tools needed for rpmbuild , 
 # depends on BuildRequires field in specfile, (TODO: take as input & install)
-RUN dnf install -y rpm-build rpmdevtools gcc make python3.11 git dnf-plugins-core
+RUN dnf install -y rpm-build rpmdevtools gcc-13 make python3.11 git dnf-plugins-core
 RUN yum config-manager --set-enabled crb
 
 # Setting up node to run our JS file
