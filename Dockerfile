@@ -1,5 +1,5 @@
 # Using CentOS 8 as base image to support rpmbuild (packages will be Dist el7)
-FROM tgagor/centos-stream:stream8
+FROM tgagor/centos-stream:stream9
 
 # Copying all contents of rpmbuild repo inside container
 COPY . .
